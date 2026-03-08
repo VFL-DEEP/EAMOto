@@ -1,4 +1,9 @@
+<div align="center">
+  <img src="assets/logo.png" alt="EAMOto Logo" width="250"/>
+
 # EAMOto - Epic Asset Manager Auto-Auth (Fast Mode)
+
+</div>
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
