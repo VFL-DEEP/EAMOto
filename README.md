@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# EAMOto
-=======
 # EAMOto - Epic Asset Manager Auto-Auth (Fast Mode)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -95,4 +92,3 @@ This project is licensed under the **MIT License**. Check the [LICENSE](LICENSE)
 ---
 
 _The era of copy-pasting code every time is over. Happy game developing! 🎮_
->>>>>>> 225c1a6 (Initial commit: EAMOto project setup)
