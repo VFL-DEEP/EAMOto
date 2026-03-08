@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="EAMOto Logo" width="250"/>
+  <img src="EAMOto.png" alt="EAMOto Logo" width="250"/>
 
 # EAMOto - Epic Asset Manager Auto-Auth (Fast Mode)
 
