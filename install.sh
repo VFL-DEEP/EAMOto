@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# EAMOto Arch Linux Kurulum Betiği
-
-set -e # Hata olursa betiği durdur
+set -e
 
 echo "📦 EAMOto kurulumu başlıyor..."
 
@@ -10,12 +8,13 @@ echo "1) Arch Linux bağımlılıkları kontrol ediliyor ve yükleniyor..."
 sudo pacman -S --needed base-devel cmake curl sqlite nlohmann-json
 
 echo "2) Proje derleniyor..."
-# Proje dizininde olduğumuzdan emin olalım (bu sh dosyasının olduğu dizin)
+
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd "$SCRIPT_DIR"
 
-# Eski build klasörü varsa silelim ki temiz kurulum olsun (opsiyonel)
-# rm -rf build
+
+rm -rf build
+sudo rm -rf ~/.local/bin/eamoto
 
 cmake -B build -S .
 cmake --build build
@@ -26,11 +25,9 @@ cp build/eamoto ~/.local/bin/eamoto
 chmod +x ~/.local/bin/eamoto
 
 echo "4) Masaüstü Kısayolu (Desktop Entry) güncelleniyor..."
-# Kendi menü simgemizi oluşturarak direkt Epic Asset Manager yazmasını sağlıyoruz. 
-# Böylece normal uygulamayı açıyormuş gibi EAMOto'yu açarsın.
+
 mkdir -p ~/.local/share/applications
 
-# Masaüstü kısayol dosyasını yazıyoruz. (Burada $HOME değişkeni script çalışırken senin ev dizinine çevrilir)
 cat << EOF > ~/.local/share/applications/eamoto.desktop
 [Desktop Entry]
 Name=Epic Asset Manager (Auto-Login)

@@ -21,6 +21,7 @@ set(SOURCES
     src/cookie.cpp
     src/auth.cpp
     src/config.cpp
+    src/utils.cpp
 )
 
 add_executable(eamoto ${SOURCES})
