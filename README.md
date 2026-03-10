@@ -27,7 +27,7 @@ Tired of opening your browser, copying an auth code, and pasting it every time? 
 
 ## System Requirements 📋
 
-- **OS:** Linux (X11)
+- **OS:** Linux
 - **Browser:** Zen Browser or Firefox (must be logged into Epic Games at least once)
 - **Epic Asset Manager:** Flatpak version (`io.github.achetagames.epic_asset_manager`)
 - **Dependencies:** `cmake`, `curl`, `sqlite3`, `nlohmann-json`, `xclip`, `xdotool`
