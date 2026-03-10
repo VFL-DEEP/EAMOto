@@ -5,7 +5,7 @@ set -e
 echo "📦 EAMOto kurulumu başlıyor..."
 
 echo "1) Arch Linux bağımlılıkları kontrol ediliyor ve yükleniyor..."
-sudo pacman -S --needed base-devel cmake curl sqlite nlohmann-json
+sudo pacman -S --needed base-devel cmake curl sqlite nlohmann-json xclip
 
 echo "2) Proje derleniyor..."
 
