@@ -17,7 +17,7 @@ Tired of opening your browser, copying an auth code, and pasting it every time? 
 
 ## How It Works ⚙️
 
-1. **🍪 Cookie Extraction:** Reads your active Epic Games session cookies directly from your Zen Browser or Firefox profile (`cookies.sqlite` + WAL files).
+1. **🍪 Cookie Extraction:** Our system Reads your active Epic Games session cookies directly from your Zen Browser or Firefox profile (`cookies.sqlite` + WAL files).
 2. **🔑 Auth Code Fetch:** Uses `libcurl` with modern browser headers to request a fresh `authorizationCode` from the Epic Games API — no manual copy-pasting.
 3. **🚀 Semi-Auto Login:** Launches Epic Asset Manager and copies the authorization code to your clipboard. Simply paste it (`Ctrl+V`) into the EAM login screen and hit **Authenticate**. No more opening browsers or copying codes manually!
 
